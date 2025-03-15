@@ -1,0 +1,207 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  color: #ffffff; /* White text */
+  background-color: #1a1a1a; /* Dark gray background */
+  background: 'back.jpg'
+}
+
+/* Navigation Bar */
+nav {
+  background: #262626; /* Slightly lighter gray */
+  color: #ffffff;
+  padding: 1rem;
+  position: sticky;
+  top: 0;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+}
+
+nav a {
+  color: #ffffff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #00ffcc; /* Bright cyan for hover */
+}
+
+/* Home Section */
+.home-section {
+  text-align: center;
+  padding: 4rem 2rem;
+  background-color: #262626; /* Slightly lighter gray */
+}
+
+.profile-photo {
+  border-radius: 50%;
+  width: 220px;
+  height: 220px;
+  object-fit: cover;
+  border: 3px solid #00ffcc; /* Bright cyan border */
+}
+
+/* About Me Section */
+.about-section {
+  padding: 2rem;
+  background-color: #1a1a1a; /* Dark gray background */
+}
+
+.about-section h2 {
+  color: #00ffcc; /* Bright cyan for headings */
+}
+
+.about-section ul {
+  color: #cccccc; /* Light gray for secondary text */
+}
+
+/* Certifications Section */
+.certifications-section {
+  padding: 2rem;
+  background-color: #262626; /* Slightly lighter gray */
+}
+
+.certifications-section h2 {
+  color: #00ffcc; /* Bright cyan for headings */
+}
+
+.certification-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+}
+
+.certification-item img {
+  width: 30%;
+  height: auto;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.certification-item img:hover {
+  transform: scale(1.05);
+}
+
+/* Projects Section */
+.projects-section {
+  padding: 2rem;
+  background-color: #1a1a1a; /* Dark gray background */
+}
+
+.projects-section h2 {
+  color: #00ffcc; /* Bright cyan for headings */
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1rem;
+}
+
+.project-item {
+  background: #262626; /* Slightly lighter gray */
+  padding: 1rem;
+  border-radius: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Education Section */
+.education-section {
+  padding: 2rem;
+  background-color: #262626; /* Slightly lighter gray */
+}
+
+.education-section h2 {
+  color: #00ffcc; /* Bright cyan for headings */
+}
+
+.education-item {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.education-item img {
+  width: 350px;
+  height: 300px;
+  margin-bottom: 1rem;
+  border-radius: 10px;
+}
+
+/* Add this to your CSS */
+.download-button {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  background-color: #00ffcc; /* Bright cyan */
+  color: #1a1a1a; /* Dark gray */
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.download-button:hover {
+  background-color: #ff6f61; /* Coral for hover */
+}
+
+.education-item h3 {
+  margin: 0.5rem 0;
+  color: #ffffff; /* White text */
+}
+
+.education-item p {
+  margin: 0.25rem 0;
+  color: #cccccc; /* Light gray for secondary text */
+}
+
+/* Contact Section */
+.contact-section {
+  padding: 2rem;
+  background-color: #1a1a1a; /* Dark gray background */
+}
+
+.contact-section h2 {
+  color: #00ffcc; /* Bright cyan for headings */
+}
+
+.contact-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.contact-section a {
+  color: #00ffcc; /* Bright cyan for links */
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.contact-section a:hover {
+  color: #ff6f61; /* Coral for hover */
+  animation: Pulse 1.5s infinite;
+}
+
+@keyframes Pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.1); }
+  100% { transform: scale(1); }
+}
+
+/* Footer */
+footer {
+  background: #262626; /* Slightly lighter gray */
+  color: #ffffff;
+  text-align: center;
+  padding: 1rem;
+}

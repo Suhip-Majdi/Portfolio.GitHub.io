@@ -91,6 +91,8 @@ nav a:hover {
 }
 
 /* Projects Section */
+
+/* Projects Section */
 .projects-section {
   padding: 2rem;
   background-color: #1a1a1a; /* Dark gray background */
@@ -98,25 +100,62 @@ nav a:hover {
 
 .projects-section h2 {
   color: #00ffcc; /* Bright cyan for headings */
+  text-align: center;
+  margin-bottom: 2rem;
 }
 
 .project-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 1rem;
+  gap: 1.5rem;
 }
 
 .project-item {
   background: #262626; /* Slightly lighter gray */
-  padding: 1rem;
+  padding: 1.5rem;
   border-radius: 10px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
 }
 
 .project-item:hover {
   transform: translateY(-5px);
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
+
+.project-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+}
+
+.project-item h3 {
+  color: #00ffcc; /* Bright cyan for headings */
+  margin-bottom: 0.5rem;
+}
+
+.project-item p {
+  color: #cccccc; /* Light gray for text */
+  margin-bottom: 1rem;
+}
+
+.project-link {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  background-color: #00ffcc; /* Bright cyan */
+  color: #1a1a1a; /* Dark gray */
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.project-link:hover {
+  background-color: #ff6f61; /* Coral for hover */
+}
+
+
 
 /* Education Section */
 .education-section {

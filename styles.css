@@ -96,6 +96,8 @@ nav a:hover {
 .projects-section {
   padding: 2rem;
   background-color: #1a1a1a; /* Dark gray background */
+  overflow-x: auto; /* Enable horizontal scrolling */
+  white-space: nowrap; /* Prevent wrapping of project items */
 }
 
 .projects-section h2 {
@@ -105,9 +107,9 @@ nav a:hover {
 }
 
 .project-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  display: inline-flex; /* Use flexbox for horizontal layout */
   gap: 1.5rem;
+  padding-bottom: 1rem; /* Add padding to avoid cutting off shadows */
 }
 
 .project-item {
@@ -116,6 +118,8 @@ nav a:hover {
   border-radius: 10px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   text-align: center;
+  width: 300px; /* Fixed width for each project item */
+  flex-shrink: 0; /* Prevent items from shrinking */
 }
 
 .project-item:hover {
@@ -139,6 +143,7 @@ nav a:hover {
 .project-item p {
   color: #cccccc; /* Light gray for text */
   margin-bottom: 1rem;
+  white-space: normal; /* Allow text to wrap */
 }
 
 .project-link {

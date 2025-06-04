@@ -249,3 +249,24 @@ footer {
   text-align: center;
   padding: 1rem;
 }
+
+
+<style>
+  .certification-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+  }
+
+.certification-item img {
+  width: 90%;
+  max-height: 180px;
+  object-fit: contain;
+}
+
+  .certification-item p {
+    text-align: center;
+    margin-top: 10px;
+    font-weight: 500;
+  }
+</style>

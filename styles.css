@@ -107,11 +107,10 @@ nav a:hover {
 }
 
 .project-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  display: inline-flex; /* Use flexbox for horizontal layout */
   gap: 1.5rem;
+  padding-bottom: 1rem; /* Add padding to avoid cutting off shadows */
 }
-
 
 .project-item {
   background: #262626; /* Slightly lighter gray */
@@ -243,39 +242,6 @@ nav a:hover {
   100% { transform: scale(1); }
 }
 
-@media (max-width: 768px) {
-  nav ul {
-    flex-direction: column;
-    gap: 0.5rem;
-    align-items: center;
-  }
-
-  .home-section, .about-section, .projects-section, .certifications-section, .education-section, .contact-section {
-    padding: 1rem;
-  }
-
-  .profile-photo {
-    width: 150px;
-    height: 150px;
-  }
-
-  .project-item {
-    width: 100%;
-  }
-
-  .education-item img {
-    width: 100%;
-    height: auto;
-  }
-
-  .certification-grid {
-    grid-template-columns: 1fr;
-  }
-}
-
-
-
-
 /* Footer */
 footer {
   background: #262626; /* Slightly lighter gray */
@@ -285,4 +251,22 @@ footer {
 }
 
 
+<style>
+  .certification-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+  }
 
+.certification-item img {
+  width: 90%;
+  max-height: 180px;
+  object-fit: contain;
+}
+
+  .certification-item p {
+    text-align: center;
+    margin-top: 10px;
+    font-weight: 500;
+  }
+</style>

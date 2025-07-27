@@ -113,9 +113,9 @@ window.addEventListener('scroll', fadeInOnScroll);
 window.addEventListener('load', fadeInOnScroll);
 
 // Toggle Projects Visibility
-const toggleBtn = document.getElementById('toggle-projects');
+const toggleProjectsBtn = document.getElementById('toggle-projects');
 const projectCards = document.querySelectorAll('.project-card');
-let showAll = false;
+let showAllProjects = false;
 
 // Initially show only first 2 projects
 projectCards.forEach((card, index) => {
@@ -124,12 +124,12 @@ projectCards.forEach((card, index) => {
   }
 });
 
-toggleBtn.addEventListener('click', () => {
-  showAll = !showAll;
+toggleProjectsBtn.addEventListener('click', () => {
+  showAllProjects = !showAllProjects;
 
   projectCards.forEach((card, index) => {
     if (index >= 2) {
-      if (showAll) {
+      if (showAllProjects) {
         card.classList.remove('hidden');
       } else {
         card.classList.add('hidden');
@@ -137,10 +137,45 @@ toggleBtn.addEventListener('click', () => {
     }
   });
 
-  toggleBtn.textContent = showAll ? 'Show Less Projects' : 'Show All Projects';
+  toggleProjectsBtn.textContent = showAllProjects ? 'Show Less Projects' : 'Show All Projects';
 
   // Smooth scroll to projects section when showing all
-  if (showAll) {
+  if (showAllProjects) {
     document.getElementById('projects').scrollIntoView({ behavior: 'smooth' });
   }
 });
+
+// Toggle Certifications Visibility
+const toggleCertsBtn = document.getElementById('toggle-certs');
+const certCards = document.querySelectorAll('.certification-card');
+let showAllCerts = false;
+
+// Initially show only first 2 certifications
+certCards.forEach((card, index) => {
+  if (index >= 2) {
+    card.classList.add('hidden');
+  }
+});
+
+toggleCertsBtn.addEventListener('click', () => {
+  showAllCerts = !showAllCerts;
+
+  certCards.forEach((card, index) => {
+    if (index >= 2) {
+      if (showAllCerts) {
+        card.classList.remove('hidden');
+      } else {
+        card.classList.add('hidden');
+      }
+    }
+  });
+
+  toggleCertsBtn.textContent = showAllCerts ? 'Show Less Certifications' : 'Show All Certifications';
+
+  // Smooth scroll to certifications section when showing all
+  if (showAllCerts) {
+    document.getElementById('certifications').scrollIntoView({ behavior: 'smooth' });
+  }
+});
+
+document.querySelector('.copyright').innerHTML = `© ${new Date().getFullYear()} Suhip Majdi. All rights reserved.`;

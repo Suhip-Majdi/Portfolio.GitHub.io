@@ -313,6 +313,10 @@ section {
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
 
+.certification-card.hidden {
+  display: none;
+}
+
 .certification-card:hover {
   transform: translateY(-10px);
   box-shadow: 0 15px 30px rgba(0, 212, 255, 0.2);
@@ -761,7 +765,7 @@ footer {
     font-size: 2rem;
   }
 
-  .project-grid {
+  .project-grid, .certification-grid {
     grid-template-columns: 1fr;
   }
 
@@ -782,9 +786,5 @@ footer {
 
   .section-title {
     font-size: 1.8rem;
-  }
-
-  .certification-grid {
-    grid-template-columns: 1fr;
   }
 }

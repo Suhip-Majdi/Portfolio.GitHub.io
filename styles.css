@@ -28,6 +28,35 @@ html {
   scroll-behavior: smooth;
 }
 
+
+
+.resume-btn {
+    display: inline-block;
+    margin: 20px 0;
+    padding: 12px 24px;
+    background-color: #3498db;
+    color: white;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    border: 2px solid #3498db;
+}
+
+.resume-btn:hover {
+    background-color: transparent;
+    color: #3498db;
+}
+
+.resume-btn i {
+    margin-right: 8px;
+}
+
+
+
+
+
+
 /* Navigation */
 header {
   position: fixed;

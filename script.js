@@ -119,7 +119,7 @@ let showAllProjects = false;
 
 // Initially show only first 2 projects
 projectCards.forEach((card, index) => {
-  if (index >= 2) {
+  if (index >= 3) {
     card.classList.add('hidden');
   }
 });
@@ -152,7 +152,7 @@ let showAllCerts = false;
 
 // Initially show only first 2 certifications
 certCards.forEach((card, index) => {
-  if (index >= 2) {
+  if (index >= 3) {
     card.classList.add('hidden');
   }
 });

@@ -227,7 +227,7 @@ section {
 .social-icons {
   display: flex;
   gap: 1.5rem;
-  margin-top: 2rem;
+  margin-top: 0.01rem;
 }
 
 .social-icons a {

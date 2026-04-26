@@ -3,7 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Suhip Majdi | Data Science & AI Portfolio</title>
+  <title>Suhip Majdi | AI Engineer & Data Scientist</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=DM+Sans:opsz,wght@9..40,300;400;500;600;700&family=Syne:wght@700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <link rel="stylesheet" href="styles.css">
 </head>
@@ -12,147 +15,394 @@
   <!-- Navigation -->
   <header id="header">
     <nav>
-      <a href="#home" class="logo"><i class="fas fa-robot"></i> Suhip Majdi</a>
+      <a href="#home" class="logo"><span class="logo-bracket">&lt;</span>SM<span class="logo-bracket">/&gt;</span></a>
       <ul class="nav-links">
         <li><a href="#home" class="active">Home</a></li>
         <li><a href="#about">About</a></li>
-        <li><a href="#certifications">Certifications</a></li>
+        <li><a href="#experience">Experience</a></li>
         <li><a href="#projects">Projects</a></li>
+        <li><a href="#certifications">Certifications</a></li>
         <li><a href="#education">Education</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
       <div class="hamburger">
-        <div></div>
-        <div></div>
-        <div></div>
+        <div></div><div></div><div></div>
       </div>
     </nav>
   </header>
 
-
-<!-- Home Section -->
-<section id="home" class="fade-in">
-    <div class="home-content">
-      <img src="images/portfolio_image.jpeg" alt="Suhip Majdi" class="profile-photo">
-      <h1>Suhip Majdi Abu Awida</h1>
-      <h3>Data Science & Artificial Intelligence Specialist</h3>
-      <div class="social-icons">
-        <a href="https://www.linkedin.com/in/suhip-majdi-2b59ba290/" target="_blank"><i class="fab fa-linkedin"></i></a>
-        <a href="https://github.com/Suhip-Majdi" target="_blank"><i class="fab fa-github"></i></a>
-        <a href="mailto:suhipmajdi77@gmail.com"><i class="fas fa-envelope"></i></a>
-        <a href="tel:+962788830933"><i class="fas fa-phone"></i></a>
+  <!-- Hero Section -->
+  <section id="home">
+    <div class="hero-grid">
+      <div class="hero-text">
+        <p class="hero-label">// AI Engineer & Data Scientist</p>
+        <h1>Suhip<br><span class="hero-accent">Majdi</span></h1>
+        <p class="hero-summary">Building production ML/NLP systems, LLM pipelines, and data products that deliver measurable impact. Strong in Python, PyTorch, transformers, and big-data tooling.</p>
+        <div class="hero-cta">
+          <a href="#experience" class="btn-primary">View My Work</a>
+          <a href="files/Suhip_Majdi.docx" download class="btn-secondary"><i class="fas fa-download"></i> Resume</a>
+        </div>
+        <div class="hero-stats">
+          <div class="stat"><span class="stat-num">3+</span><span class="stat-label">Internships</span></div>
+          <div class="stat-divider"></div>
+          <div class="stat"><span class="stat-num">10+</span><span class="stat-label">Projects</span></div>
+          <div class="stat-divider"></div>
+          <div class="stat"><span class="stat-num">10+</span><span class="stat-label">Certifications</span></div>
+        </div>
       </div>
-      <!-- Download Resume Button -->
-      <a href="files/Suhip Majdi.pdf" download="SuhipMajdi_Resume.pdf" class="resume-btn">
-        <i class="fas fa-download"></i> Download Resume</a>
+      <div class="hero-visual">
+        <div class="photo-frame">
+          <img src="images/portfolio_image.jpeg" alt="Suhip Majdi" class="profile-photo">
+          <div class="photo-ring"></div>
+        </div>
+        <div class="floating-tag tag-1"><i class="fas fa-brain"></i> NLP / LLMs</div>
+        <div class="floating-tag tag-2"><i class="fas fa-eye"></i> Computer Vision</div>
+        <div class="floating-tag tag-3"><i class="fas fa-database"></i> Big Data</div>
+      </div>
+    </div>
+    <div class="social-bar">
+      <a href="https://www.linkedin.com/in/suhip-majdi-2b59ba290/" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+      <a href="https://github.com/Suhip-Majdi" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+      <a href="mailto:suhipmajdi77@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
+      <a href="tel:+962788830933" title="Phone"><i class="fas fa-phone"></i></a>
     </div>
     <a href="#about" class="scroll-down"><i class="fas fa-chevron-down"></i></a>
+  </section>
 
-</section>
-
-  <!-- Home Section -->
-<section id="about" class="fade-in delay-1">
-    <h2 class="section-title">About Me</h2>
-    <div class="about-container">
-        <div class="about-text">
-            <!-- Updated introductory paragraph -->
-            <p>Dynamic and results-driven Data Science & Artificial Intelligence professional with a solid command of machine learning, <strong>generative AI</strong>, big data engineering, and data analytics. Known for building intelligent systems that learn, adapt, and deliver. My expertise spans from training deep learning models to developing <strong>production-ready LLM applications using RAG and LangChain</strong>. I combine technical depth with creative problem-solving to develop AI-driven solutions that make a meaningful impact.</p>
-
-            <p>I'm a passionate Data Science and Artificial Intelligence graduate from Mutah University. My academic journey and self-driven projects have equipped me with a strong foundation in <strong>large language models (LLMs)</strong>, machine learning, distributed data processing, and full-stack AI development.</p>
-
-            <p>Born on August 9, 2003, and based in Amman, Jordan, I'm eager to apply my skills to solve real-world problems. I'm committed to continuous learning at the forefront of AI innovation.</p>
-        </div>
-        <div class="skills-container">
-            <div class="skills-category">
-                <h4>Programming</h4>
-                <div class="skills-list">
-                    <span class="skill-item">Python</span>
-                    <span class="skill-item">SQL</span>
-                    <span class="skill-item">C++</span>
-                    <span class="skill-item">JavaScript</span>
-                    <span class="skill-item">HTML/CSS</span>
-                </div>
-            </div>
-            <!-- NEW CATEGORY: Generative AI & LLMs -->
-            <div class="skills-category">
-                <h4>Generative AI & LLMs</h4>
-                <div class="skills-list">
-                    <span class="skill-item">LangChain</span>
-                    <span class="skill-item">OpenAI API</span>
-                    <span class="skill-item">RAG</span>
-                    <span class="skill-item">Hugging Face</span>
-                    <span class="skill-item">Vector DBs (Chroma, FAISS)</span>
-                    <span class="skill-item">Prompt Engineering</span>
-                </div>
-            </div>
-            <div class="skills-category">
-                <h4>Machine & Deep Learning</h4>
-                <div class="skills-list">
-                    <span class="skill-item">PyTorch</span>
-                    <span class="skill-item">TensorFlow</span>
-                    <span class="skill-item">scikit-learn</span>
-                    <span class="skill-item">OpenCV</span>
-                    <span class="skill-item">Hyperparameter Tuning</span>
-                </div>
-            </div>
-            <div class="skills-category">
-                <h4>Big Data Tools</h4>
-                <div class="skills-list">
-                    <span class="skill-item">Apache Spark</span>
-                    <span class="skill-item">PySpark</span>
-                    <span class="skill-item">Kafka</span>
-                    <span class="skill-item">Hadoop</span>
-                    <span class="skill-item">Hive</span>
-                    <span class="skill-item">Cassandra</span>
-                </div>
-            </div>
-            <div class="skills-category">
-                <h4>Data Visualization</h4>
-                <div class="skills-list">
-                    <span class="skill-item">Power BI</span>
-                    <span class="skill-item">Tableau</span>
-                    <span class="skill-item">Matplotlib</span>
-                    <span class="skill-item">Seaborn</span>
-                    <span class="skill-item">Streamlit</span> <!-- Moved here as it's a viz tool -->
-                </div>
-            </div>
-            <div class="skills-category">
-                <h4>Cloud & DevOps</h4>
-                <div class="skills-list">
-                    <span class="skill-item">AWS (EC2, S3)</span>
-                    <span class="skill-item">Linux/Shell</span>
-                    <span class="skill-item">Git/GitHub</span>
-                    <span class="skill-item">Docker</span>
-                </div>
-            </div>
-        </div>
+  <!-- About Section -->
+  <section id="about">
+    <div class="section-header">
+      <span class="section-num">01</span>
+      <h2 class="section-title">About Me</h2>
     </div>
+    <div class="about-container">
+      <div class="about-text">
+        <p>I'm an AI Engineer and Data Scientist based in <strong>Amman, Jordan</strong>, with hands-on experience shipping ML systems end-to-end — from raw data pipelines to production APIs. I specialize in <strong>NLP, generative AI, and computer vision</strong>, and I care deeply about models that don't just work in notebooks, but actually solve real problems.</p>
+        <p>My recent work at <strong>Altibbi</strong> involved deploying Arabic NLP semantic-search with domain-specific embeddings — a system used by real clinicians. That kind of impact is what drives me. I pair strong engineering habits (Docker, FastAPI, PostgreSQL) with cutting-edge ML (transformers, RAG, LoRA fine-tuning) to build things that last.</p>
+        <p>Outside of work, I actively expand my skills through AWS certifications, open-source projects, and exploring the latest in LLM research. I'm ready to take on a full-time role where I can grow fast and build things that matter.</p>
+        <div class="about-links">
+          <a href="https://github.com/Suhip-Majdi" target="_blank" class="about-link"><i class="fab fa-github"></i> GitHub Portfolio</a>
+          <a href="https://www.linkedin.com/in/suhip-majdi-2b59ba290/" target="_blank" class="about-link"><i class="fab fa-linkedin"></i> LinkedIn</a>
+        </div>
+      </div>
+      <div class="skills-grid">
+        <div class="skill-category">
+          <h4><i class="fas fa-robot"></i> Generative AI & LLMs</h4>
+          <div class="skill-tags">
+            <span>LangChain</span><span>RAG</span><span>LLM APIs</span><span>Hugging Face</span>
+            <span>Vector DBs</span><span>Prompt Engineering</span><span>LoRA Fine-tuning</span>
+          </div>
+        </div>
+        <div class="skill-category">
+          <h4><i class="fas fa-microchip"></i> ML & Deep Learning</h4>
+          <div class="skill-tags">
+            <span>PyTorch</span><span>TensorFlow</span><span>scikit-learn</span>
+            <span>OpenCV</span><span>YOLOv5</span><span>Transformers</span>
+          </div>
+        </div>
+        <div class="skill-category">
+          <h4><i class="fas fa-code"></i> Programming</h4>
+          <div class="skill-tags">
+            <span>Python</span><span>SQL</span><span>C++</span><span>JavaScript</span><span>HTML/CSS</span>
+          </div>
+        </div>
+        <div class="skill-category">
+          <h4><i class="fas fa-server"></i> Big Data & Storage</h4>
+          <div class="skill-tags">
+            <span>Apache Spark</span><span>PySpark</span><span>Kafka</span>
+            <span>Hadoop</span><span>PostgreSQL</span><span>Cassandra</span>
+          </div>
+        </div>
+        <div class="skill-category">
+          <h4><i class="fas fa-cloud"></i> Cloud & DevOps</h4>
+          <div class="skill-tags">
+            <span>AWS EC2/S3</span><span>Docker</span><span>FastAPI</span><span>Flask</span><span>Git</span><span>Linux</span>
+          </div>
+        </div>
+        <div class="skill-category">
+          <h4><i class="fas fa-chart-bar"></i> Data & Visualization</h4>
+          <div class="skill-tags">
+            <span>Power BI</span><span>Tableau</span><span>Streamlit</span><span>Matplotlib</span><span>Seaborn</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- ============================================================
+  EXPERIENCE SECTION — Drop this into your index.html
+  Replace the existing <section id="experience">...</section>
+
+  TO EDIT DATES: Search for the date strings below and change them.
+  Format used: "Mon YYYY – Mon YYYY"
+  ============================================================ -->
+
+<section id="experience">
+  <div class="section-header">
+    <span class="section-num">02</span>
+    <h2 class="section-title">Experience</h2>
+  </div>
+
+  <div class="timeline">
+
+    <!-- ─── JOB 1: Cyborg Automation Hub ─────────────────── -->
+    <div class="timeline-item">
+      <div class="timeline-dot"></div>
+
+      <!-- ✏️ EDIT DATE HERE -->
+      <div class="timeline-date">Dec 2025 – Feb 2026</div>
+
+      <div class="timeline-card">
+        <div class="tc-header">
+          <div>
+            <!-- ✏️ EDIT TITLE & COMPANY HERE -->
+            <h3>AI Engineer Trainee</h3>
+            <p class="tc-company">
+              <i class="fas fa-building"></i>
+              Cyborg Automation Hub
+            </p>
+          </div>
+          <span class="tc-badge">ML Engineering</span>
+        </div>
+
+        <ul class="tc-bullets">
+          <li>Completed intensive hands-on training in <strong>machine & deep learning</strong> — mathematical foundations, data pipeline architecture, model training, and evaluation.</li>
+          <li>Gained practical experience with <strong>RAG systems</strong>, embedding architectures, large language models (LLMs), and computer vision model development.</li>
+          <li>Applied end-to-end ML workflows in a project-driven program, from raw data ingestion to production deployment.</li>
+        </ul>
+
+        <div class="tc-tech">
+          <span>PyTorch</span>
+          <span>LLMs</span>
+          <span>RAG</span>
+          <span>Computer Vision</span>
+          <span>ML Pipelines</span>
+        </div>
+      </div>
+    </div><!-- /timeline-item -->
+
+
+    <!-- ─── JOB 2: Altibbi ────────────────────────────────── -->
+    <div class="timeline-item">
+      <div class="timeline-dot featured-dot"></div>
+
+      <!-- ✏️ EDIT DATE HERE -->
+      <div class="timeline-date">Sep 2025 – Dec 2025</div>
+
+      <div class="timeline-card featured-card">
+        <div class="tc-header">
+          <div>
+            <!-- ✏️ EDIT TITLE & COMPANY HERE -->
+            <h3>AI Engineer Intern <span class="tc-star">★ Featured</span></h3>
+            <p class="tc-company">
+              <i class="fas fa-building"></i>
+              Altibbi &nbsp;·&nbsp; Arabic Healthcare AI Platform
+            </p>
+          </div>
+          <span class="tc-badge tc-badge-featured">NLP / Healthcare AI</span>
+        </div>
+
+        <ul class="tc-bullets">
+          <li>Deployed a <strong>production Arabic NLP semantic-search system</strong> using domain-specific transformer embeddings and vector similarity search — actively used by clinicians for patient triage.</li>
+          <li>Trained <strong>transformer and traditional ML classifiers</strong> for disease tagging and automated triage; built robust Arabic text cleaning and normalization pipelines.</li>
+          <li>Persisted patient Q&amp;A metadata in <strong>PostgreSQL</strong>, containerized the system with <strong>Docker</strong>, and shipped a <strong>FastAPI</strong> endpoint for clinical validation.</li>
+        </ul>
+
+        <div class="tc-tech">
+          <span>Arabic NLP</span>
+          <span>Transformers</span>
+          <span>Vector Search</span>
+          <span>PostgreSQL</span>
+          <span>Docker</span>
+          <span>FastAPI</span>
+        </div>
+      </div>
+    </div><!-- /timeline-item -->
+
+
+    <!-- ─── JOB 3: Ministry of Economy / Bridge ──────────── -->
+    <div class="timeline-item">
+      <div class="timeline-dot"></div>
+
+      <!-- ✏️ EDIT DATE HERE -->
+      <div class="timeline-date">Jun 2025 – Aug 2025</div>
+
+      <div class="timeline-card">
+        <div class="tc-header">
+          <div>
+            <!-- ✏️ EDIT TITLE & COMPANY HERE -->
+            <h3>Data Analytics Trainee</h3>
+            <p class="tc-company">
+              <i class="fas fa-building"></i>
+              Ministry of Economy &amp; Bridge Company
+            </p>
+          </div>
+          <span class="tc-badge">Data Analytics</span>
+        </div>
+
+        <ul class="tc-bullets">
+          <li>Analyzed real-world business datasets using <strong>Excel and Power BI</strong>, surfacing actionable trends and communicating insights to non-technical stakeholders.</li>
+          <li>Cleaned and prepared data — handling missing values, duplicates, and formatting — ensuring full reporting accuracy across all deliverables.</li>
+          <li>Built <strong>interactive KPI dashboards</strong> to track performance metrics and support strategic decisions across business units.</li>
+          <li>Applied statistical analysis to detect patterns and anomalies, supporting data-driven decision-making processes.</li>
+        </ul>
+
+        <div class="tc-tech">
+          <span>Power BI</span>
+          <span>Excel</span>
+          <span>KPI Dashboards</span>
+          <span>Statistical Analysis</span>
+          <span>Data Cleaning</span>
+        </div>
+      </div>
+    </div><!-- /timeline-item -->
+
+  </div><!-- /timeline -->
 </section>
+
+  <!-- Projects Section -->
+  <section id="projects">
+    <div class="section-header">
+      <span class="section-num">03</span>
+      <h2 class="section-title">Projects</h2>
+    </div>
+    <button id="toggle-projects" class="toggle-btn">Show All Projects</button>
+    <div class="project-grid">
+
+      <div class="project-card featured-project">
+        <div class="project-img-wrap">
+          <img src="images/Final-graduate.jpg" alt="Object Detection System" class="project-img">
+          <span class="project-label">Graduation Project</span>
+        </div>
+        <div class="project-info">
+          <div class="project-tech"><span>YOLOv5</span><span>Flask</span><span>OpenCV</span><span>Python</span></div>
+          <h3 class="project-title">Real-Time Multi-Class Car Part Detection System</h3>
+          <p class="project-description">Trained a custom YOLOv5 model for automotive part recognition with hyperparameter tuning and data augmentation. Achieved <strong>90%+ mAP</strong> on a custom dataset. Deployed as a production-ready Flask web app allowing image/video uploads with instant detections.</p>
+          <div class="project-links">
+            <a href="https://github.com/Suhip-Majdi/FINAL-PROJECT" class="project-link" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-card featured-project">
+        <div class="project-img-wrap">
+          <img src="images/chat-RAG.jfif" alt="RAG Application" class="project-img">
+          <span class="project-label">GenAI</span>
+        </div>
+        <div class="project-info">
+          <div class="project-tech"><span>LangChain</span><span>OpenAI</span><span>ChromaDB</span><span>Streamlit</span></div>
+          <h3 class="project-title">AI Knowledge Retrieval (RAG App)</h3>
+          <p class="project-description">Built a full Retrieval-Augmented Generation pipeline using LangChain, OpenAI embeddings, and Chroma vector store. Enables accurate, grounded Q&A over custom document collections — zero hallucination architecture.</p>
+          <div class="project-links">
+            <a href="https://github.com/Suhip-Majdi/AI-Knowledge-Retrieval" class="project-link" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-card featured-project">
+        <div class="project-img-wrap">
+          <img src="images/bot-database.jfif" alt="AI meets Databases" class="project-img">
+          <span class="project-label">LLM + SQL</span>
+        </div>
+        <div class="project-info">
+          <div class="project-tech"><span>LangChain</span><span>Google Gemini</span><span>MySQL</span><span>Streamlit</span></div>
+          <h3 class="project-title">Natural Language to SQL (AI meets Databases)</h3>
+          <p class="project-description">Built a Streamlit app that converts plain English questions into SQL queries using LangChain + Google Gemini. Powered by a retail sales database in MySQL — making analytics accessible to non-technical users instantly.</p>
+          <div class="project-links">
+            <a href="https://github.com/Suhip-Majdi/AI-meets-Databases" class="project-link" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-card hidden">
+        <div class="project-img-wrap">
+          <img src="images/RLGame_1.jpg" alt="Reinforcement Learning" class="project-img">
+          <span class="project-label">Deep RL</span>
+        </div>
+        <div class="project-info">
+          <div class="project-tech"><span>Deep Q-Learning</span><span>PyTorch</span><span>Python</span></div>
+          <h3 class="project-title">Reinforcement Learning in Games (DQN Agent)</h3>
+          <p class="project-description">Trained a Deep Q-Network agent to master an obstacles game environment, learning optimal strategies through trial and interaction — demonstrating practical RL fundamentals.</p>
+          <div class="project-links">
+            <a href="https://github.com/Suhip-Majdi/DEEP_LEARNING" class="project-link" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-card hidden">
+        <div class="project-img-wrap">
+          <img src="images/download.png" alt="LangGraph Chatbot" class="project-img">
+          <span class="project-label">LLM Agents</span>
+        </div>
+        <div class="project-info">
+          <div class="project-tech"><span>LangGraph</span><span>Ollama</span><span>LLaMA 3.1</span></div>
+          <h3 class="project-title">Agentic Chatbot with LangGraph</h3>
+          <p class="project-description">Developed a stateful chatbot using LangGraph for conversation workflow design and Ollama-hosted LLaMA 3.1 as the local LLM — showcasing agentic, multi-step reasoning.</p>
+          <div class="project-links">
+            <a href="https://github.com/Suhip-Majdi/Chatbots-LangGraph" class="project-link" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-card hidden">
+        <div class="project-img-wrap">
+          <img src="images/images_bi.jpg" alt="Power BI Dashboard" class="project-img">
+          <span class="project-label">Analytics</span>
+        </div>
+        <div class="project-info">
+          <div class="project-tech"><span>Power BI</span><span>DAX</span><span>Data Modeling</span></div>
+          <h3 class="project-title">Retail Sales Analytics Dashboard</h3>
+          <p class="project-description">Built an interactive Power BI dashboard surfacing revenue trends, product performance, customer behavior, and regional distribution insights for retail stakeholders.</p>
+          <div class="project-links">
+            <a href="https://github.com/Suhip-Majdi/InternIntelligence-Retail-sample" class="project-link" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-card hidden">
+        <div class="project-img-wrap">
+          <img src="images/download_12.jpg" alt="OCR License Plates" class="project-img">
+          <span class="project-label">Computer Vision</span>
+        </div>
+        <div class="project-info">
+          <div class="project-tech"><span>EasyOCR</span><span>OpenCV</span><span>Python</span></div>
+          <h3 class="project-title">License Plate OCR System</h3>
+          <p class="project-description">Built a real-time OCR system for automatic license plate recognition — applicable to security and smart parking management scenarios.</p>
+          <div class="project-links">
+            <a href="https://github.com/Suhip-Majdi/easy_OCR" class="project-link" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
 
   <!-- Certifications Section -->
-  <section id="certifications" class="fade-in delay-2">
-    <h2 class="section-title">Certifications</h2>
+  <section id="certifications">
+    <div class="section-header">
+      <span class="section-num">04</span>
+      <h2 class="section-title">Certifications</h2>
+    </div>
     <button id="toggle-certs" class="toggle-btn">Show All Certifications</button>
-
     <div class="certification-grid">
       <div class="certification-card">
         <img src="images/100day.jpg" alt="100 Days of Code" class="certification-img">
         <div class="certification-info">
           <p class="certification-provider">Udemy</p>
-          <h3 class="certification-title">100 Days of Code: The Complete Python Pro Bootcamp</h3>
-          <a href="https://www.udemy.com/course/100-days-of-code/"  class="project-link">Course link</a>
+          <h3 class="certification-title">100 Days of Code: Complete Python Pro Bootcamp</h3>
+          <a href="https://www.udemy.com/course/100-days-of-code/" class="cert-link" target="_blank">View Course</a>
         </div>
       </div>
       <div class="certification-card">
         <img src="images/Certification_1.jpg" alt="Data Science" class="certification-img">
         <div class="certification-info">
           <p class="certification-provider">Intern Intelligence</p>
-          <h3 class="certification-title">Data Science</h3>
-          <a href="https://www.linkedin.com/company/intern-intelligence/"  class="project-link">Course link</a>
+          <h3 class="certification-title">Data Science Certification</h3>
+          <a href="https://www.linkedin.com/company/intern-intelligence/" class="cert-link" target="_blank">View Course</a>
         </div>
       </div>
-
-      <!-- Additional certification cards (initially hidden) -->
       <div class="certification-card">
         <img src="images/IEEE.jfif" alt="Computer Vision" class="certification-img">
         <div class="certification-info">
@@ -163,279 +413,63 @@
       <div class="certification-card hidden">
         <img src="images/cloud essentials.PNG" alt="Cloud Essentials" class="certification-img">
         <div class="certification-info">
-          <p class="certification-provider">Amazon Web Service (AWS)</p>
+          <p class="certification-provider">Amazon Web Services (AWS)</p>
           <h3 class="certification-title">Cloud Essentials</h3>
-          <a href="https://view.awsapps.com/start/#/?callback_url=https%3A%2F%2Foidc.us-east-1.amazonaws.com%2Fauthentication_result&orchestrator_id=AAAADmtleS0xNTY0MDI4MDc4QpRSU0pz_7Dq9VszDsIB8gM_ik4-1-yPHKllv-Lru8WG3hFK14sAmklnQf1zKoP1NheGPL7zNrqD1HWE-5qfl3gvoqIfuk46we57-ughFmbo8ngjFdm-ny9eYomzF3QlYoQ7jmCCo7OmbP-nkwI410DHrhoJ841KOjHo5rCap_pl0Pi_g7IKRsygrbwC8LfLMxbFaHVLcKGmB2tN6whoKNsVVuaO5-7UB3BaU-cZSsNV2We_VlByDxOxA2K4QLDAO4m8_pSdjH_a3CHeUIbrL7sIBGdtIl7NiBWG2tqOquLyBTu8XEhYJm_Q8dkjXWPdRffm2GznIpl37qz0IaJRsQZccCO0e11EMOJD3IRN0T7UtGzYnCm8rNvaVsJQo68hkdrW8doVsbTJ92dDiB_7UzvkhsrLkjMkCb3nuzgPVWOP63fXdj8TQpEJiwX8jTAw_SLQMDo0PrPLud-Y8fDxMAe2ZpiZHdOUX9NoL4VMoVVU72RVvpZwBZCmNqc_saPEen4nZWse8Hhplj-cPZnse_M7DdeTxPb9zDmtl1SX1nA9xjvvmJBHVK3G1xnZwaBaoMJMTW7oyNPP0_-yBodiTbZ4NH3o2LfcSqfHyIt-yu6roCLZJZqQENXPwkaPzd1NHW4hnWjuITzFmX263RVk0u_VkrSrXQEI_Z3LkE82rqOlHvyCgeene_1mUCx-U_ZsGT_NbFfzlmoAV6R9uYlq602khksXDJsockITHpDCOqtJwhLveb6S8yqHh8wanD35Zm49SmCOzNFMdDaN0mVjXaHm3qLewWcMZ-CNWpCtXhuYPtj7BX0ZIbT5-LPSSSkeBMxBPOpKA8253opSzEzTm-NjVC_WVugzX1H6yKy-dUJHWDcrajHP6qO8k3Wpe_oiV2eEaMhRmMXRc8YcHAfTTYSkPLzfzGmF0I4mQhAudRdnXGZIzy7xPhCbW1F32U8YofTcTpm8YYJuJ4w0SesooTL5B69dbPU66pEpWVsZF1C2R8vO1vntoddGOb-qE4EQTM5HeAd0l6JPQnKxkR0n6rSgBUT-Iv_WDx1uNJmh"  class="project-link">Course link</a>
         </div>
       </div>
-
-
-
-
       <div class="certification-card hidden">
-        <img src="images/Makani.jfif" alt="Robot Operating System" class="certification-img">
+        <img src="images/Makani.jfif" alt="ROS" class="certification-img">
         <div class="certification-info">
           <p class="certification-provider">Makani</p>
-          <h3 class="certification-title">Robot Operating System</h3>
+          <h3 class="certification-title">Robot Operating System (ROS)</h3>
         </div>
       </div>
-
-        <div class="certification-card hidden">
-        <img src="images/Exploring Artificial Intelligence Use Cases And Applications.PNG" alt="Robot Operating System" class="certification-img">
-        <div class="certification-info">
-          <p class="certification-provider">Amazon Web Service (AWS)</p>
-          <h3 class="certification-title">Exploring Artificial Intelligence Use Cases And Applications </h3>
-          <a href="https://skillbuilder.aws/learn/A3U2U9VGMX/exploring-artificial-intelligence-use-cases-and-applications/M12JQTFKB5"  class="project-link">Course link</a>
-        </div>
-      </div>
-
-
       <div class="certification-card hidden">
-        <img src="images/Oprimizing Foundation Models.PNG" alt="Robot Operating System" class="certification-img">
+        <img src="images/Exploring Artificial Intelligence Use Cases And Applications.PNG" alt="AI Use Cases" class="certification-img">
         <div class="certification-info">
-          <p class="certification-provider">Amazon Web Service (AWS)</p>
+          <p class="certification-provider">Amazon Web Services (AWS)</p>
+          <h3 class="certification-title">Exploring AI Use Cases & Applications</h3>
+          <a href="https://skillbuilder.aws/learn/A3U2U9VGMX/exploring-artificial-intelligence-use-cases-and-applications/M12JQTFKB5" class="cert-link" target="_blank">View Course</a>
+        </div>
+      </div>
+      <div class="certification-card hidden">
+        <img src="images/Oprimizing Foundation Models.PNG" alt="Foundation Models" class="certification-img">
+        <div class="certification-info">
+          <p class="certification-provider">Amazon Web Services (AWS)</p>
           <h3 class="certification-title">Optimizing Foundation Models</h3>
-          <a href="https://skillbuilder.aws/learn/CDYTAJCKGY/optimizing-foundation-models/PVR1FRGN1T"  class="project-link">Course link</a>
+          <a href="https://skillbuilder.aws/learn/CDYTAJCKGY/optimizing-foundation-models/PVR1FRGN1T" class="cert-link" target="_blank">View Course</a>
         </div>
       </div>
-
-              <div class="certification-card hidden">
-        <img src="images/Responsible Artificial Intelligence Practices.PNG" alt="Robot Operating System" class="certification-img">
-        <div class="certification-info">
-          <p class="certification-provider">Amazon Web Service (AWS)</p>
-          <h3 class="certification-title">Responsible Artificial Intelligence Practices</h3>
-          <a href="https://skillbuilder.aws/learn/1H631ZWCTP/responsible-artificial-intelligence-practices/BN51NEFJNG"  class="project-link">Course link</a>
-        </div>
-      </div>
-
-              <div class="certification-card hidden">
-        <img src="images/Essentials Of Prompt Engineering.PNG" alt="Robot Operating System" class="certification-img">
-        <div class="certification-info">
-          <p class="certification-provider">Amazon Web Service (AWS)</p>
-          <h3 class="certification-title">Essentials Of Prompt Engineering </h3>
-          <a href="https://skillbuilder.aws/learn/XBNAVKA88J/essentials-of-prompt-engineering/9T9Q45EDTV"  class="project-link">Course link</a>
-        </div>
-      </div>
-
       <div class="certification-card hidden">
-        <img src="images/fundamentals of ML&AI.PNG" alt="Fundamentals of ML & AI" class="certification-img">
+        <img src="images/Responsible Artificial Intelligence Practices.PNG" alt="Responsible AI" class="certification-img">
         <div class="certification-info">
-          <p class="certification-provider">Amazon Web Service (AWS)</p>
-          <h3 class="certification-title">Fundamentals of Machine Learning and AI</h3>
-          <a href="https://skillbuilder.aws/learn/VSS1JQ8QWW/developing-machine-learning-solutions/HR1KN4V89V"  class="project-link">Course link</a>
+          <p class="certification-provider">Amazon Web Services (AWS)</p>
+          <h3 class="certification-title">Responsible AI Practices</h3>
+          <a href="https://skillbuilder.aws/learn/1H631ZWCTP/responsible-artificial-intelligence-practices/BN51NEFJNG" class="cert-link" target="_blank">View Course</a>
         </div>
       </div>
-
       <div class="certification-card hidden">
-        <img src="images/Developing Generative Artificial Intelligence Solutions.PNG" alt="Robot Operating System" class="certification-img">
+        <img src="images/Essentials Of Prompt Engineering.PNG" alt="Prompt Engineering" class="certification-img">
         <div class="certification-info">
-          <p class="certification-provider">Amazon Web Service (AWS)</p>
-          <h3 class="certification-title">Developing Generative Artificial Intelligence Solutions</h3>
-          <a href="https://skillbuilder.aws/learn/PWJCMNXWHT/developing-generative-artificial-intelligence-solutions/JFB95SXNPF"   class="project-link"> Course link</a>
+          <p class="certification-provider">Amazon Web Services (AWS)</p>
+          <h3 class="certification-title">Essentials of Prompt Engineering</h3>
+          <a href="https://skillbuilder.aws/learn/XBNAVKA88J/essentials-of-prompt-engineering/9T9Q45EDTV" class="cert-link" target="_blank">View Course</a>
         </div>
       </div>
-
-
       <div class="certification-card hidden">
-        <img src="images/come_soon.jfif" alt="Fundamentals of ML & AI" class="certification-img">
+        <img src="images/fundamentals of ML&AI.PNG" alt="ML & AI Fundamentals" class="certification-img">
         <div class="certification-info">
-          <h3 class="certification-title">Future Of Work</h3>
+          <p class="certification-provider">Amazon Web Services (AWS)</p>
+          <h3 class="certification-title">Fundamentals of Machine Learning & AI</h3>
+          <a href="https://skillbuilder.aws/learn/VSS1JQ8QWW/developing-machine-learning-solutions/HR1KN4V89V" class="cert-link" target="_blank">View Course</a>
         </div>
       </div>
-    </div>
-  </section>
-
-  <!-- Projects Section -->
-  <section id="projects" class="fade-in delay-3">
-    <h2 class="section-title">Projects</h2>
-    <button id="toggle-projects" class="toggle-btn">Show All Projects</button>
-
-    <div class="project-grid">
-
-
-
-            <div class="project-card">
-          <img src="images/Final-graduate.jpg" alt="R" class="project-img">
-        <div class="project-info">
-          <h3 class="project-title">Object Detection System For Multi-Class Car Part Recognition In Automotive Maintenance Environments</h3>
-          <p class="project-description">Developed and deployed a YOLOv5-based computer vision model for real-time object detection, trained on a custom dataset, Optimized the model using hyperparameter tuning and data augmentation, identifying target objects under varying conditions, Deployed the model as a web application using Flask and integrated it with a responsive front-end (HTML/CSS/JavaScript), enabling users to upload images/videos for instant
-detection. </p>
-          <div class="project-links">
-            <a href="https://github.com/Suhip-Majdi/FINAL-PROJECT" class="project-link" target="_blank">View Project</a>
-          </div>
-        </div>
-      </div>
-
-
-
-      <div class="project-card">
-        <img src="images/images_bi.jpg" alt="Data Analysis Dashboard" class="project-img">
-        <div class="project-info">
-          <h3 class="project-title">Retail Sales Analytics Dashboard</h3>
-          <p class="project-description">Developed an interactive Power BI dashboard to analyze retail sales performance. The report provides valuable insights into revenue trends, product performance, customer behavior, and regional sales distribution.</p>
-          <div class="project-links">
-            <a href="https://github.com/Suhip-Majdi/InternIntelligence-Retail-sample" class="project-link" target="_blank">View Project</a>
-          </div>
-        </div>
-      </div>
-
-
-            <div class="project-card">
-        <img src="images/RLGame_1.jpg" alt="Reinforcement Learning Game" class="project-img">
-        <div class="project-info">
-          <h3 class="project-title">Reinforcement Learning in Games</h3>
-          <p class="project-description">Enhanced an obstacles game using Deep Q-Learning algorithm, allowing the agent to learn by interacting with its environment, enabling it to gain experiences quickly and efficiently.</p>
-          <div class="project-links">
-            <a href="https://github.com/Suhip-Majdi/DEEP_LEARNING" class="project-link" target="_blank">View Project</a>
-          </div>
-        </div>
-      </div>
-
-
-
-                      <div class="project-card hidden">
-        <img src="images/bot-database.jfif" alt="" class="project-img">
-        <div class="project-info">
-          <h3 class="project-title">AI meets Databases</h3>
-          <p class="project-description">Developed a Retail Sales Database in MySQL Workbench and built a Streamlit application that converts natural language into SQL queries using LangChain and Google Gemini. The system retrieves results instantly, making database insights accessible without SQL knowledge.
-
-.</p>
-          <div class="project-links">
-            <a href="https://github.com/Suhip-Majdi/AI-meets-Databases" class="project-link" target="_blank">View Project</a>
-          </div>
-        </div>
-      </div>
-
-
-
-
-                 <div class="project-card">
-        <img src="images/chat-RAG.jfif" alt="" class="project-img">
-        <div class="project-info">
-          <h3 class="project-title">AI-Knowledge-Retrieval </h3>
-          <p class="project-description">A Retrieval-Augmented Generation (RAG) Application was built using LangChain, OpenAI, and Chroma with a Streamlit interface.</p>
-          <div class="project-links">
-            <a href="https://github.com/Suhip-Majdi/AI-Knowledge-Retrieval" class="project-link" target="_blank">View Project</a>
-          </div>
-        </div>
-      </div>
-
-
-
-            <div class="project-card">
-        <img src="images/images_11.jpg" alt="Reinforcement Learning" class="project-img">
-        <div class="project-info">
-          <h3 class="project-title">Object Detection</h3>
-          <p class="project-description">Deployed a YOLOv5-based computer vision model for real-time object detection. Achieved 90% accuracy on a custom dataset.</p>
-          <div class="project-links">
-            <a href="https://github.com/Suhip-Majdi/open_cv/blob/main/detect_object.py" class="project-link" target="_blank">View Project</a>
-          </div>
-        </div>
-      </div>
-
-
-              <div class="project-card hidden">
-        <img src="images/download.png" alt="OCR for Car Plates" class="project-img">
-        <div class="project-info">
-          <h3 class="project-title">Chatbots-LangGraph</h3>
-          <p class="project-description">A chatbot was developed using LangGraph to design the conversation workflow and Ollama LLaMA 3.1 as the LLM.</p>
-          <div class="project-links">
-            <a href="https://github.com/Suhip-Majdi/Chatbots-LangGraph" class="project-link" target="_blank">View Project</a>
-          </div>
-        </div>
-      </div>
-
-
-
-
-      <!-- Additional project cards (initially hidden) -->
-      <div class="project-card hidden">
-        <img src="images/download_12.jpg" alt="OCR for Car Plates" class="project-img">
-        <div class="project-info">
-          <h3 class="project-title">Optical Character Recognition for Car Plates</h3>
-          <p class="project-description">Developed a License Plate Recognition system using OCR technology for security and parking management applications. The system accurately reads and recognizes characters on vehicle license plates in real-time.</p>
-          <div class="project-links">
-            <a href="https://github.com/Suhip-Majdi/easy_OCR" class="project-link" target="_blank">View Project</a>
-          </div>
-        </div>
-      </div>
-
-
-
-      <div class="project-card hidden">
-        <img src="images/AITEXT.jpg" alt="Text Recognition" class="project-img">
-        <div class="project-info">
-          <h3 class="project-title">Text Recognition AI</h3>
-          <p class="project-description">Developed a text recognition system that compares AI and human approaches to text recognition, highlighting the strengths and weaknesses of each method in different scenarios.</p>
-          <div class="project-links">
-            <a href="https://github.com/Suhip-Majdi/InternIntelligence-Retail-sample" class="project-link" target="_blank">View Project</a>
-          </div>
-        </div>
-      </div>
-
-      <div class="project-card hidden">
-        <img src="images/images_pump.png" alt="Reinforcement Learning" class="project-img">
-        <div class="project-info">
-          <h3 class="project-title">Reinforcement Learning with Bombs</h3>
-          <p class="project-description">Enhanced the agent to learn by interacting with their environment (bombs), allowing them to gain experience quickly and efficiently in a dynamic game environment.</p>
-          <div class="project-links">
-            <a href="https://github.com/Suhip-Majdi/Reinforcement-Learning" class="project-link" target="_blank">View Project</a>
-          </div>
-        </div>
-      </div>
-
-      <div class="project-card hidden">
-        <img src="images/imagestk.jpg" alt="School Management System" class="project-img">
-        <div class="project-info">
-          <h3 class="project-title">School Management System</h3>
-          <p class="project-description">Developed a comprehensive GUI-based School Management System using Python's Tkinter library, featuring student records, scheduling, and administrative functions with an intuitive interface.</p>
-          <div class="project-links">
-            <a href="https://github.com/Suhip-Majdi/school_tkinter" class="project-link" target="_blank">View Project</a>
-          </div>
-        </div>
-      </div>
-
-      <div class="project-card hidden">
-        <img src="images/download_quizler.jpg" alt="Reinforcement Learning" class="project-img">
-        <div class="project-info">
-          <h3 class="project-title">Build a Quiz With Python</h3>
-          <p class="project-description">A Quiz application has a set of questions and their answers and it checks for the correctness of answers that are submitted by users.</p>
-          <div class="project-links">
-            <a href="https://github.com/Suhip-Majdi/quizzler_app" class="project-link" target="_blank">View Project</a>
-          </div>
-        </div>
-      </div>
-
-      <div class="project-card hidden">
-        <img src="images/images_face_eyes.jpg" alt="Reinforcement Learning" class="project-img">
-        <div class="project-info">
-          <h3 class="project-title">Face and Eye Tracking</h3>
-          <p class="project-description">Track faces and eyes using OpenCV.</p>
-          <div class="project-links">
-            <a href="https://github.com/Suhip-Majdi/open_cv/blob/main/tracking_face_eyes.py" class="project-link" target="_blank">View Project</a>
-          </div>
-        </div>
-      </div>
-
-      <div class="project-card hidden">
-        <img src="images/download_16.jpg" alt="Reinforcement Learning" class="project-img">
-        <div class="project-info">
-          <h3 class="project-title">Guess the country: United States</h3>
-          <p class="project-description">With 50 states in total, there are a lot of geography facts to learn about the United States. This map quiz game is here to help. See how fast you can pin the location of the lower 48.</p>
-          <div class="project-links">
-            <a href="https://github.com/Suhip-Majdi/pandas/tree/main/gusse_country_US" class="project-link" target="_blank">View Project</a>
-          </div>
-        </div>
-      </div>
-
-      <div class="project-card hidden">
-        <img src="images/img14.jpg" alt="Reinforcement Learning" class="project-img">
-        <div class="project-info">
-          <h3 class="project-title">In Future</h3>
-          <p class="project-description">Stay tuned for more exciting projects in the fields of Data Science and Artificial Intelligence!</p>
-          <div class="project-links">
-            <a href="https://github.com/Suhip-Majdi" class="project-link" target="_blank">View Project</a>
-          </div>
+      <div class="certification-card hidden">
+        <img src="images/Developing Generative Artificial Intelligence Solutions.PNG" alt="GenAI" class="certification-img">
+        <div class="certification-info">
+          <p class="certification-provider">Amazon Web Services (AWS)</p>
+          <h3 class="certification-title">Developing Generative AI Solutions</h3>
+          <a href="https://skillbuilder.aws/learn/PWJCMNXWHT/developing-generative-artificial-intelligence-solutions/JFB95SXNPF" class="cert-link" target="_blank">View Course</a>
         </div>
       </div>
     </div>
@@ -443,105 +477,98 @@ detection. </p>
 
   <!-- Education Section -->
   <section id="education">
-    <h2 class="section-title">Education</h2>
+    <div class="section-header">
+      <span class="section-num">05</span>
+      <h2 class="section-title">Education</h2>
+    </div>
     <div class="education-grid">
       <div class="education-card">
-        <img src="images/images.jpg" alt="Mutah University" class="education-logo">
-        <h3 class="education-title">Mutah University</h3>
-        <p class="education-degree">Bachelor of Data Science and Artificial Intelligence</p>
-        <p class="education-duration">October 2021 - January 2025</p>
-        <p class="education-gpa">GPA: 80.42</p>
-        <a href="files/University_Certificate.pdf" download class="download-btn">Download Certificate</a>
+        <div class="edu-icon"><i class="fas fa-graduation-cap"></i></div>
+        <div class="edu-content">
+          <h3>Mu'tah University</h3>
+          <p class="edu-degree">B.Sc. in Data Science & Artificial Intelligence</p>
+          <p class="edu-meta">Aug 2021 – Jan 2025 &nbsp;·&nbsp; <strong>GPA: 80.42/100</strong></p>
+          <p class="edu-detail">Major: Data Science and AI | Amman, Jordan</p>
+          <a href="files/University_Certificate.pdf" download class="download-btn"><i class="fas fa-download"></i> Certificate</a>
+        </div>
       </div>
       <div class="education-card">
-        <img src="images/school.jfif" alt="Zaid Bin-Haritha High School" class="education-logo">
-        <h3 class="education-title">Zaid Bin-Haritha High School</h3>
-        <p class="education-degree">Academic Branch</p>
-        <p class="education-duration">2019 - 2020</p>
-        <a href="files/High-School_Certificate.pdf" download class="download-btn">Download Certificate</a>
+        <div class="edu-icon"><i class="fas fa-school"></i></div>
+        <div class="edu-content">
+          <h3>Zaid Bin-Haritha High School</h3>
+          <p class="edu-degree">Academic Branch — Tawjihi</p>
+          <p class="edu-meta">Graduated 2020</p>
+          <a href="files/High-School_Certificate.pdf" download class="download-btn"><i class="fas fa-download"></i> Certificate</a>
+        </div>
       </div>
     </div>
   </section>
 
   <!-- Contact Section -->
   <section id="contact">
-    <h2 class="section-title">Contact Me</h2>
+    <div class="section-header">
+      <span class="section-num">06</span>
+      <h2 class="section-title">Contact</h2>
+    </div>
     <div class="contact-container">
       <div class="contact-info">
-        <h3>Let's Connect!</h3>
-        <p>I'm always open to discussing new projects, creative ideas or opportunities to be part of your vision. Feel free to reach out through any of the channels below.</p>
-        <div class="contact-details">
-          <div class="contact-item">
-            <i class="fas fa-envelope contact-icon"></i>
-            <div class="contact-text">
-              <a href="mailto:suhipmajdi77@gmail.com">suhipmajdi77@gmail.com</a>
-            </div>
-          </div>
-          <div class="contact-item">
-            <i class="fas fa-phone contact-icon"></i>
-            <div class="contact-text">
-              <a href="tel:+962788830933">+962 788830933</a>
-            </div>
-          </div>
-          <div class="contact-item">
-            <i class="fab fa-linkedin contact-icon"></i>
-            <div class="contact-text">
-              <a href="https://www.linkedin.com/in/suhip-majdi-2b59ba290/" target="_blank">linkedin.com/in/suhip-majdi</a>
-            </div>
-          </div>
-          <div class="contact-item">
-            <i class="fab fa-github contact-icon"></i>
-            <div class="contact-text">
-              <a href="https://github.com/Suhip-Majdi" target="_blank">github.com/Suhip-Majdi</a>
-            </div>
-          </div>
+        <h3>Let's build something great.</h3>
+        <p>I'm actively looking for AI Engineer / Data Scientist roles. Whether you have a job opportunity, project, or just want to connect — I'd love to hear from you.</p>
+        <div class="contact-items">
+          <a href="mailto:suhipmajdi77@gmail.com" class="contact-item">
+            <i class="fas fa-envelope"></i><span>suhipmajdi77@gmail.com</span>
+          </a>
+          <a href="tel:+962788830933" class="contact-item">
+            <i class="fas fa-phone"></i><span>+962 788 830 933</span>
+          </a>
+          <a href="https://www.linkedin.com/in/suhip-majdi-2b59ba290/" target="_blank" class="contact-item">
+            <i class="fab fa-linkedin"></i><span>linkedin.com/in/suhip-majdi</span>
+          </a>
+          <a href="https://github.com/Suhip-Majdi" target="_blank" class="contact-item">
+            <i class="fab fa-github"></i><span>github.com/Suhip-Majdi</span>
+          </a>
         </div>
       </div>
-      <div class="contact-form">
-        <form id="contactForm">
+      <form id="contactForm" class="contact-form" novalidate>
+        <div class="form-row">
           <div class="form-group">
             <label for="name">Name</label>
-            <input type="text" id="name" class="form-control" required>
+            <input type="text" id="name" placeholder="Your name" required>
           </div>
           <div class="form-group">
             <label for="email">Email</label>
-            <input type="email" id="email" class="form-control" required>
+            <input type="email" id="email" placeholder="your@email.com" required>
           </div>
-          <div class="form-group">
-            <label for="subject">Subject</label>
-            <input type="text" id="subject" class="form-control" required>
-          </div>
-          <div class="form-group">
-            <label for="message">Message</label>
-            <textarea id="message" class="form-control" required></textarea>
-          </div>
-          <button type="submit" class="submit-btn">Send Message</button>
-        </form>
-      </div>
+        </div>
+        <div class="form-group">
+          <label for="subject">Subject</label>
+          <input type="text" id="subject" placeholder="Job opportunity / Collaboration..." required>
+        </div>
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" rows="5" placeholder="Tell me about the role or project..." required></textarea>
+        </div>
+        <button type="submit" class="btn-primary">Send Message <i class="fas fa-paper-plane"></i></button>
+      </form>
     </div>
   </section>
 
   <!-- Footer -->
   <footer>
-    <div class="footer-content">
+    <div class="footer-inner">
+      <a href="#home" class="logo"><span class="logo-bracket">&lt;</span>SM<span class="logo-bracket">/&gt;</span></a>
       <div class="footer-links">
-        <a href="#home">Home</a>
         <a href="#about">About</a>
-        <a href="#certifications">Certifications</a>
+        <a href="#experience">Experience</a>
         <a href="#projects">Projects</a>
-        <a href="#education">Education</a>
         <a href="#contact">Contact</a>
       </div>
-      <p class="copyright">© 2023 Suhip Majdi. All rights reserved.</p>
+      <p class="copyright">© <span id="year"></span> Suhip Majdi · Built with passion from Amman, Jordan</p>
     </div>
   </footer>
 
-  <!-- Back to Top Button -->
-  <div class="back-to-top">
-    <i class="fas fa-arrow-up"></i>
-  </div>
+  <div class="back-to-top" id="backToTop"><i class="fas fa-arrow-up"></i></div>
 
-  <!-- JavaScript -->
   <script src="script.js"></script>
 </body>
 </html>

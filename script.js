@@ -1,181 +1,120 @@
-// Mobile Navigation
+/* ============================================================
+   SUHIP MAJDI — Portfolio JavaScript
+   ============================================================ */
+
+// ── MOBILE NAV ──────────────────────────────────────────────
 const hamburger = document.querySelector('.hamburger');
 const navLinks = document.querySelector('.nav-links');
-const navItems = document.querySelectorAll('.nav-links li');
 
-hamburger.addEventListener('click', () => {
-  navLinks.classList.toggle('active');
+hamburger?.addEventListener('click', () => {
   hamburger.classList.toggle('active');
+  navLinks.classList.toggle('open');
 });
 
-navItems.forEach(item => {
-  item.addEventListener('click', () => {
-    navLinks.classList.remove('active');
-    hamburger.classList.remove('active');
+document.querySelectorAll('.nav-links a').forEach(link => {
+  link.addEventListener('click', () => {
+    hamburger?.classList.remove('active');
+    navLinks?.classList.remove('open');
   });
 });
 
-// Sticky Header
+// ── STICKY HEADER ───────────────────────────────────────────
 const header = document.getElementById('header');
 window.addEventListener('scroll', () => {
-  if (window.scrollY > 100) {
-    header.classList.add('scrolled');
-  } else {
-    header.classList.remove('scrolled');
-  }
+  header?.classList.toggle('scrolled', window.scrollY > 80);
 });
 
-// Active Navigation Link
-const sections = document.querySelectorAll('section');
-const navLinksAll = document.querySelectorAll('.nav-links a');
+// ── ACTIVE NAV LINK ─────────────────────────────────────────
+const sections = document.querySelectorAll('section[id]');
+const navItems = document.querySelectorAll('.nav-links a');
 
-window.addEventListener('scroll', () => {
+function setActiveNav() {
   let current = '';
-
   sections.forEach(section => {
-    const sectionTop = section.offsetTop;
-    const sectionHeight = section.clientHeight;
-
-    if (pageYOffset >= (sectionTop - 300)) {
-      current = section.getAttribute('id');
+    if (window.scrollY >= section.offsetTop - 140) {
+      current = section.id;
     }
   });
+  navItems.forEach(link => {
+    link.classList.toggle('active', link.getAttribute('href') === `#${current}`);
+  });
+}
+window.addEventListener('scroll', setActiveNav, { passive: true });
 
-  navLinksAll.forEach(link => {
-    link.classList.remove('active');
-    if (link.getAttribute('href') === `#${current}`) {
-      link.classList.add('active');
+// ── SCROLL ANIMATIONS ───────────────────────────────────────
+const fadeEls = document.querySelectorAll('.timeline-card, .project-card, .education-card, .certification-card, .skill-category, .about-text p');
+fadeEls.forEach(el => el.classList.add('fade-up'));
+
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach((entry, i) => {
+    if (entry.isIntersecting) {
+      setTimeout(() => entry.target.classList.add('visible'), i * 60);
+      observer.unobserve(entry.target);
     }
   });
-});
+}, { threshold: 0.1 });
 
-// Back to Top Button
-const backToTopBtn = document.querySelector('.back-to-top');
+document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
 
+// ── BACK TO TOP ─────────────────────────────────────────────
+const backToTop = document.getElementById('backToTop');
 window.addEventListener('scroll', () => {
-  if (window.scrollY > 300) {
-    backToTopBtn.classList.add('active');
-  } else {
-    backToTopBtn.classList.remove('active');
-  }
-});
+  backToTop?.classList.toggle('visible', window.scrollY > 400);
+}, { passive: true });
+backToTop?.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
 
-backToTopBtn.addEventListener('click', () => {
-  window.scrollTo({
-    top: 0,
-    behavior: 'smooth'
-  });
-});
-
-// Form Submission
-const contactForm = document.getElementById('contactForm');
-
-contactForm.addEventListener('submit', (e) => {
-  e.preventDefault();
-
-  // Get form values
-  const name = document.getElementById('name').value;
-  const email = document.getElementById('email').value;
-  const subject = document.getElementById('subject').value;
-  const message = document.getElementById('message').value;
-
-  // Here you would typically send the form data to a server
-  // For demonstration, we'll just show an alert
-  alert(`Thank you, ${name}! Your message has been sent. I'll get back to you soon.`);
-
-  // Reset the form
-  contactForm.reset();
-});
-
-// Animation on Scroll
-const fadeElements = document.querySelectorAll('.fade-in');
-
-const fadeInOnScroll = () => {
-  fadeElements.forEach(element => {
-    const elementTop = element.getBoundingClientRect().top;
-    const windowHeight = window.innerHeight;
-
-    if (elementTop < windowHeight - 100) {
-      element.style.opacity = '1';
-      element.style.transform = 'translateY(0)';
-    }
-  });
-};
-
-// Initialize elements as invisible
-fadeElements.forEach(element => {
-  element.style.opacity = '0';
-  element.style.transform = 'translateY(20px)';
-  element.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
-});
-
-window.addEventListener('scroll', fadeInOnScroll);
-window.addEventListener('load', fadeInOnScroll);
-
-// Toggle Projects Visibility
-const toggleProjectsBtn = document.getElementById('toggle-projects');
+// ── PROJECTS TOGGLE ─────────────────────────────────────────
+const toggleProjects = document.getElementById('toggle-projects');
 const projectCards = document.querySelectorAll('.project-card');
 let showAllProjects = false;
 
-// Initially show only first 2 projects
-projectCards.forEach((card, index) => {
-  if (index >= 3) {
-    card.classList.add('hidden');
-  }
+// Show first 3 by default (featured), hide rest
+projectCards.forEach((card, i) => {
+  if (i >= 3) card.classList.add('hidden');
 });
 
-toggleProjectsBtn.addEventListener('click', () => {
+toggleProjects?.addEventListener('click', () => {
   showAllProjects = !showAllProjects;
-
-  projectCards.forEach((card, index) => {
-    if (index >= 2) {
-      if (showAllProjects) {
-        card.classList.remove('hidden');
-      } else {
-        card.classList.add('hidden');
-      }
-    }
+  projectCards.forEach((card, i) => {
+    if (i >= 3) card.classList.toggle('hidden', !showAllProjects);
   });
-
-  toggleProjectsBtn.textContent = showAllProjects ? 'Show Less Projects' : 'Show All Projects';
-
-  // Smooth scroll to projects section when showing all
-  if (showAllProjects) {
-    document.getElementById('projects').scrollIntoView({ behavior: 'smooth' });
-  }
+  toggleProjects.textContent = showAllProjects ? 'Show Less' : 'Show All Projects';
 });
 
-// Toggle Certifications Visibility
-const toggleCertsBtn = document.getElementById('toggle-certs');
+// ── CERTIFICATIONS TOGGLE ───────────────────────────────────
+const toggleCerts = document.getElementById('toggle-certs');
 const certCards = document.querySelectorAll('.certification-card');
 let showAllCerts = false;
 
-// Initially show only first 2 certifications
-certCards.forEach((card, index) => {
-  if (index >= 3) {
-    card.classList.add('hidden');
-  }
+certCards.forEach((card, i) => {
+  if (i >= 3) card.classList.add('hidden');
 });
 
-toggleCertsBtn.addEventListener('click', () => {
+toggleCerts?.addEventListener('click', () => {
   showAllCerts = !showAllCerts;
-
-  certCards.forEach((card, index) => {
-    if (index >= 2) {
-      if (showAllCerts) {
-        card.classList.remove('hidden');
-      } else {
-        card.classList.add('hidden');
-      }
-    }
+  certCards.forEach((card, i) => {
+    if (i >= 3) card.classList.toggle('hidden', !showAllCerts);
   });
-
-  toggleCertsBtn.textContent = showAllCerts ? 'Show Less Certifications' : 'Show All Certifications';
-
-  // Smooth scroll to certifications section when showing all
-  if (showAllCerts) {
-    document.getElementById('certifications').scrollIntoView({ behavior: 'smooth' });
-  }
+  toggleCerts.textContent = showAllCerts ? 'Show Less' : 'Show All Certifications';
 });
 
-document.querySelector('.copyright').innerHTML = `© ${new Date().getFullYear()} Suhip Majdi. All rights reserved.`;
+// ── CONTACT FORM ─────────────────────────────────────────────
+document.getElementById('contactForm')?.addEventListener('submit', (e) => {
+  e.preventDefault();
+  const name = document.getElementById('name')?.value;
+  const btn = e.target.querySelector('button[type="submit"]');
+  if (btn) {
+    btn.textContent = '✓ Message Sent!';
+    btn.style.background = 'var(--primary-d)';
+    setTimeout(() => {
+      btn.innerHTML = 'Send Message <i class="fas fa-paper-plane"></i>';
+      btn.style.background = '';
+      e.target.reset();
+    }, 3000);
+  }
+  console.log('Form submitted by:', name);
+});
+
+// ── FOOTER YEAR ──────────────────────────────────────────────
+const yearEl = document.getElementById('year');
+if (yearEl) yearEl.textContent = new Date().getFullYear();

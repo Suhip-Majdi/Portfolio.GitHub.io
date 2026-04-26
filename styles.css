@@ -281,6 +281,7 @@ section:first-of-type { max-width: 100%; }
 /* ============================= */
 /* Mobile Fix for Hero Section   */
 /* ============================= */
+@media (max-width: 768px) {
 
   #home {
     padding: 0 1.2rem; /* reduce side padding */

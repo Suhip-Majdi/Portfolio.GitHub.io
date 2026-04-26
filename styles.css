@@ -278,6 +278,63 @@ section:first-of-type { max-width: 100%; }
   50% { transform: translateX(-50%) translateY(8px); }
 }
 
+/* ============================= */
+/* Mobile Fix for Hero Section   */
+/* ============================= */
+
+  #home {
+    padding: 0 1.2rem; /* reduce side padding */
+    overflow-x: hidden; /* prevent horizontal scroll */
+  }
+
+  .hero-grid {
+    grid-template-columns: 1fr; /* stack instead of 2 columns */
+    gap: 2.5rem;
+    padding: 5rem 0 3rem;
+    text-align: center; /* center all content */
+  }
+
+  .hero-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hero-summary {
+    max-width: 100%;
+  }
+
+  .hero-cta {
+    justify-content: center;
+  }
+
+  .hero-stats {
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+  }
+
+  /* Fix image section */
+  .hero-visual {
+    margin-top: 1rem;
+  }
+
+  .photo-frame {
+    width: 220px;
+    height: 220px;
+  }
+
+  /* Prevent floating tags from breaking layout */
+  .floating-tag {
+    display: none;
+  }
+
+  /* Hide social bar on mobile (it causes overflow) */
+  .social-bar {
+    display: none;
+  }
+}
+
 /* ============================================================
    ABOUT
    ============================================================ */

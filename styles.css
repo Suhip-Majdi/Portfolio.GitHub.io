@@ -284,15 +284,15 @@ section:first-of-type { max-width: 100%; }
 @media (max-width: 768px) {
 
   #home {
-    padding: 0 1.2rem; /* reduce side padding */
-    overflow-x: hidden; /* prevent horizontal scroll */
+    padding: 0 1.2rem;
+    overflow-x: hidden;
   }
 
   .hero-grid {
-    grid-template-columns: 1fr; /* stack instead of 2 columns */
+    grid-template-columns: 1fr;
     gap: 2.5rem;
     padding: 5rem 0 3rem;
-    text-align: center; /* center all content */
+    text-align: center;
   }
 
   .hero-text {
@@ -315,9 +315,12 @@ section:first-of-type { max-width: 100%; }
     gap: 1.5rem;
   }
 
-  /* Fix image section */
+  /* Image section */
   .hero-visual {
     margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
   .photo-frame {
@@ -325,12 +328,26 @@ section:first-of-type { max-width: 100%; }
     height: 220px;
   }
 
-  /* Prevent floating tags from breaking layout */
+  /* ============================= */
+  /* Floating Tags (Mobile Safe)   */
+  /* ============================= */
   .floating-tag {
-    display: none;
+    display: flex;
+    position: static;          /* remove absolute positioning */
+    margin: 0.4rem auto;
+    justify-content: center;
+    font-size: 0.75rem;
+    padding: 0.4rem 0.9rem;
+    animation: none;           /* smoother on mobile */
   }
 
-  /* Hide social bar on mobile (it causes overflow) */
+  .tag-1,
+  .tag-2,
+  .tag-3 {
+    position: static;          /* reset desktop offsets */
+  }
+
+  /* Social bar hidden (good UX for mobile) */
   .social-bar {
     display: none;
   }
